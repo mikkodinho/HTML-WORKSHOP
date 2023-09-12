@@ -1,29 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Portfolio Website-Michael</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./CSS WORKSHOP/styles.css">
+    
+    <title>Portfolio Website-Michael</title>
+   
+   
+    
+    <!-- internal styling -->
+        <style>
+            .about{
+                color:blue
+            }
+            p{
+                color: rgb(68, 0, 255);
+            }
+        </style>
 </head>
- 
+
 <body>
+    <div class="top-menu">
+        
+        <img src="./round logo.jpg" alt="round logo" height="50px" width="50px">
+
+     <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Services</a>
+        <a href="#">Contact section</a>
+        <a href="#">About section</a>
+     </nav>
+    </div>
+
+            <!-- inline styling -->
     <div>
-        <h1>Hi Im Michael. Im a Web Developer</h1>
+        <h1 style="color:blue;">Welcome to my Page</h1>
+
+        <h3 style="color:rgb(22, 22, 22);">Hi my name is  Michael. I am a Web Developer that is based in Abuja. 
+            For more information about me check the about section...</h3>
+         
         <img src="./clean.png" alt="clean picture" height="300px" width="250px"/>
     </div>
-    <div><a href="#Nav bar"> Navigation bar</a>
-        <h2>Welcome to my Page</h2>
-        <h3>What really do i do?</h3>
+    
+    <div>
+        <p style="display; height: 70px;"> <i>...Be happy with what you do...</i>.</p>
+        
+        <h3 style="color: blue;">What really do i do?</h3>
     </div>
     <div>
-        <nav>
+        <section>
             <ul>
                 <li>I design webpage using HTML</li>
                 <li>CSS and</li>
                 <li>Javascript</li>
             </ul>
-        </nav>
-    <p>Additional information is available at <a href="http//gomycode.co">www.gomycode.co</a> </p>
+        </section>
+        <table>
+            <tr>
+                <th>HTML</th>
+                <th>CSS</th>
+                <th>Javascript</th> 
+            </tr>
+            <tr>
+                <td>Paragraphs</td>
+                <td>Selectors</td>
+                <td>DOM</td>
+            </tr>
+            <tr>
+                <td>Tables</td>
+                <td>Styles</td>
+                <td>Elements</td>
+            </tr>
+        </table>
+
+    <p class="p">Additional information is available at <a href="http//gomycode.co">www.gomycode.co</a> </p>
+    <p>This video below will inspire you to chase your dreams and never to give up in life.</p>
+
     </div>
     <div>
         <video width="320" height="240" controls>
@@ -31,52 +89,28 @@
         
         </video>
     </div>
-    <div>
-        <a name="Nav bar"></a><h2>Navigation Bar section</h2>
-        <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
-            <div class="container">
-                <a class="navbar-brand" href="#">MIchael</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Work">work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Resume">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    
-                </div>
-            </div>
         </nav>
     </div>
     <div>
-        <h2>Contact Section</h2>
+        <h2 class="text">Contact Section</h2>
         <form action="/action_page.php" method="get">
             <label for="fname">First name:</label>
             <input type="text" id="fname" name="fname"><br><br>
             <label for="lname">Last name:</label>
             <input type="text" id="lname" name="lname"><br><br>
-            <input type="submit" value="Submit">
+            <button>Submit</button> 
           </form> 
+    </div>
+    <div>
+        <a name="about"> <h2 class="about"> About Section</h2>
+        </a>
+        <p>Here you will learn everything about me.</p>
     </div>
         
          
     <div>
         <footer>
-            <p>Author: Onyedika Michael</p>
+            <p style="color:rgb(206, 18, 50)">Author: Onyedika Michael</p>
             <p><a href="mailto:onyedika.cmichael@gmail.com">onyedika.cmichael@gmail.com</a></p>
         </footer> 
        
